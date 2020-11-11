@@ -6,36 +6,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <Button
+    <TextView
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="test01"
-        android:text="test01" />
+        android:layout_margin="10dp"
+        android:text="Name" />
 
-    <Button
+    <TextView
+        android:id="@+id/tv_hash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="test02"
-        android:text="test02" />
+        android:layout_margin="10dp"
+        android:text="Hash" />
 
-    <Button
+    <TextView
+        android:id="@+id/tv_size"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="test03"
-        android:text="test03" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="test04"
-        android:text="test04" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="enterIPFS"
-        android:text="进入IPFS" />
-
-
+        android:layout_margin="10dp"
+        android:text="Size" />
 
 </LinearLayout>

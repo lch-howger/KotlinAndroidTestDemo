@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test01"
+        android:text="测试01" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test02"
+        android:text="测试02" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test03"
+        android:text="测试03" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test04"
+        android:text="测试04" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test05"
+        android:text="测试05" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test06"
+        android:text="测试06" />
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="200dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/et"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:imeOptions="actionSearch"-->
+    <!--        android:inputType="text"-->
+    <!--        android:layout_height="100dp" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:text="fdsjkfjslkfjskdl"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:text="aaaaaaaaaaaaaaa"-->
+    <!--        android:layout_height="wrap_content" />-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content" />-->
+</LinearLayout>
