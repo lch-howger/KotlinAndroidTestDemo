@@ -12,10 +12,6 @@ import com.lich.kotlinandroidtestdemo.utils.AppConfig
 import com.lich.kotlinandroidtestdemo.utils.HttpUtils
 import com.lich.kotlinandroidtestdemo.utils.UrlUtils
 import kotlinx.android.synthetic.main.activity_ipfs.*
-import okhttp3.MultipartBody
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import java.lang.Exception
 
 /**
  * Created by lichhowger on 2020/11/9.
@@ -34,19 +30,19 @@ class IPFSSimpleActivity : AppCompatActivity() {
         lv.adapter = adapter
         lv.onItemClickListener = AdapterView.OnItemClickListener { p0, p1, i, p3 ->
             val entity = list[i]
-            if (entity.Name.contains(".")) {
-                enterFile(nowPath + entity.Name + "/")
-            } else {
+            if (entity.Type == 0) {
+                enterFile(entity)
+            } else if (entity.Type == 1) {
                 enterDir(nowPath + entity.Name + "/")
             }
         }
 
-        lv.onItemLongClickListener =
-            AdapterView.OnItemLongClickListener { adapterView, view, i, l ->
-                val entity = list[i]
-                delete(entity.Name)
-                return@OnItemLongClickListener true
-            }
+//        lv.onItemLongClickListener =
+//            AdapterView.OnItemLongClickListener { adapterView, view, i, l ->
+//                val entity = list[i]
+//                delete(entity.Name)
+//                return@OnItemLongClickListener true
+//            }
 
         pathList.add(nowPath)
         enterDir(pathList[0])
@@ -71,14 +67,19 @@ class IPFSSimpleActivity : AppCompatActivity() {
         }
     }
 
-    fun enterFile(path: String) {
-
+    fun enterFile(entity: IPFSSimpleEntity) {
+        val intent = Intent(this, DetailActivity::class.java)
+        intent.putExtra("name", entity.Name)
+        intent.putExtra("hash", entity.Hash)
+        intent.putExtra("size", entity.Size)
+        startActivity(intent)
     }
 
     fun enterDir(path: String) {
-        var url = AppConfig.API_SIMPLE_LS + path
+        var url = AppConfig.API_SIMPLE_LS +  "?long=true"
+        val new = UrlUtils.getUrl(url, "arg", path)
         HttpUtils(this)
-            .url(url)
+            .url(new)
             .simplePost(success = {
 
                 if (it.isNullOrEmpty() || it == "null") {

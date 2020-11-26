@@ -7,4 +7,7 @@ import android.util.Size
  */
 class IPFSSimpleEntity {
     var Name: String = ""
+    var Hash: String = ""
+    var Size: Int = -1
+    var Type: Int = -1
 }

@@ -23,6 +23,12 @@
         android:onClick="test03"
         android:text="测试03" />
 
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:progress="0" />
 
     <Button
         android:layout_width="wrap_content"

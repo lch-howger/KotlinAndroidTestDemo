@@ -29,6 +29,7 @@
         <activity android:name=".IPFSTestActivity" />
         <activity android:name=".MkdirActivity" />
         <activity android:name=".IPFSSimpleActivity" />
+        <activity android:name=".DetailActivity" />
 
 
     </application>

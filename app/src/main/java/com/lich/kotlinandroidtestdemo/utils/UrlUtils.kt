@@ -30,4 +30,10 @@ object UrlUtils {
         }
         return url
     }
+
+    fun getUrl(url: String, key: String, value: String): String {
+        var new = url
+        new = new + "&" + key + "=" + value
+        return new
+    }
 }
