@@ -1,4 +1,4 @@
-package com.lich.kotlinandroidtestdemo;
+package com.lich.kotlinandroidtestdemo.activity;
 
 import android.os.Bundle;
 

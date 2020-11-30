@@ -1,10 +1,13 @@
-package com.lich.kotlinandroidtestdemo
+package com.lich.kotlinandroidtestdemo.activity
 
+import android.app.PendingIntent.getActivity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
+import com.lich.kotlinandroidtestdemo.R
+import com.lich.kotlinandroidtestdemo.entity.IPFSAddEntity
 import com.lich.kotlinandroidtestdemo.entity.UrlEntity
 import com.lich.kotlinandroidtestdemo.utils.FileUtils
 import com.lich.kotlinandroidtestdemo.utils.UrlUtils
@@ -26,7 +29,14 @@ class TestActivity2 : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_test)
+        setContentView(R.layout.activity_test2)
+
+        window?.decorView?.apply {
+            systemUiVisibility = View.SYSTEM_UI_FLAG_LOW_PROFILE
+        }
+
+
+
     }
 
     fun test01(view: View) {

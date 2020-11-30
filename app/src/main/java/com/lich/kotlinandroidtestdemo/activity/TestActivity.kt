@@ -1,4 +1,4 @@
-package com.lich.kotlinandroidtestdemo
+package com.lich.kotlinandroidtestdemo.activity
 
 import android.os.Bundle
 import android.view.View
@@ -8,6 +8,8 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
+import com.lich.kotlinandroidtestdemo.entity.IPFSAddEntity
+import com.lich.kotlinandroidtestdemo.R
 import com.lich.kotlinandroidtestdemo.entity.UrlEntity
 import com.lich.kotlinandroidtestdemo.utils.PathUtils
 import com.lich.kotlinandroidtestdemo.utils.UrlUtils
@@ -20,10 +22,8 @@ import okhttp3.RequestBody.Companion.asRequestBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
 import java.io.File
-import java.io.FileOutputStream
 import java.io.IOException
 import java.util.*
-import kotlin.collections.HashMap
 
 
 /**

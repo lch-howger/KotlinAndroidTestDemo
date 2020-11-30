@@ -1,4 +1,4 @@
-package com.lich.kotlinandroidtestdemo
+package com.lich.kotlinandroidtestdemo.activity
 
 import android.os.Bundle
 import android.os.Handler
@@ -6,15 +6,10 @@ import android.os.Message
 import android.os.SystemClock.sleep
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.lich.kotlinandroidtestdemo.R
 import com.lich.kotlinandroidtestdemo.utils.PathUtils
 import kotlinx.android.synthetic.main.activity_test.*
-import okhttp3.*
-import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.RequestBody.Companion.toRequestBody
 import java.io.*
-import java.net.HttpURLConnection
-import java.util.*
-import kotlin.concurrent.thread
 
 
 /**

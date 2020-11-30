@@ -1,4 +1,4 @@
-package com.lich.kotlinandroidtestdemo
+package com.lich.kotlinandroidtestdemo.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,9 @@ import android.widget.AdapterView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
+import com.lich.kotlinandroidtestdemo.adapter.IPFSSimpleAdapter
+import com.lich.kotlinandroidtestdemo.entity.IPFSSimpleEntity
+import com.lich.kotlinandroidtestdemo.R
 import com.lich.kotlinandroidtestdemo.entity.UrlEntity
 import com.lich.kotlinandroidtestdemo.utils.AppConfig
 import com.lich.kotlinandroidtestdemo.utils.HttpUtils

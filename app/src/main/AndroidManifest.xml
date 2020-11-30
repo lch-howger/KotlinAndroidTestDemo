@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".application.TestApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -14,7 +15,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,14 +23,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".TestActivity" />
-        <activity android:name=".TestActivity2" />
-        <activity android:name=".TestActivity3" />
-        <activity android:name=".TestActivity4" />
-        <activity android:name=".IPFSTestActivity" />
-        <activity android:name=".MkdirActivity" />
-        <activity android:name=".IPFSSimpleActivity" />
-        <activity android:name=".DetailActivity" />
+        <activity android:name=".activity.TestActivity" />
+        <activity
+            android:name=".activity.TestActivity2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.TestActivity3" />
+        <activity android:name=".activity.TestActivity4" />
+        <activity android:name=".activity.IPFSTestActivity" />
+        <activity android:name=".activity.MkdirActivity" />
+        <activity android:name=".activity.IPFSSimpleActivity" />
+        <activity android:name=".activity.DetailActivity" />
+        <activity android:name=".activity.StarActivity" />
 
 
     </application>

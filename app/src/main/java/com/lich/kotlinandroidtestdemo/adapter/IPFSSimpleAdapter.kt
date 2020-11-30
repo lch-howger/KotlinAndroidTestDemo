@@ -1,8 +1,8 @@
-package com.lich.kotlinandroidtestdemo
+package com.lich.kotlinandroidtestdemo.adapter
 
 import android.view.View
-import kotlinx.android.synthetic.main.item_ipfs.*
-import kotlinx.android.synthetic.main.item_ipfs.view.*
+import com.lich.kotlinandroidtestdemo.R
+import com.lich.kotlinandroidtestdemo.entity.IPFSSimpleEntity
 import kotlinx.android.synthetic.main.item_ipfs.view.tv_name
 import kotlinx.android.synthetic.main.item_ipfs_simple.view.*
 

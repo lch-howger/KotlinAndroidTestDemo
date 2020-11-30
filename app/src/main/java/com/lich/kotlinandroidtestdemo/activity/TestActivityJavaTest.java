@@ -1,4 +1,4 @@
-package com.lich.kotlinandroidtestdemo;
+package com.lich.kotlinandroidtestdemo.activity;
 
 import android.os.Bundle;
 
@@ -6,6 +6,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.toolbox.HttpResponse;
+import com.lich.kotlinandroidtestdemo.R;
 
 import java.io.File;
 import java.io.IOException;

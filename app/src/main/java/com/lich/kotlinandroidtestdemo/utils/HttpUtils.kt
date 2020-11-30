@@ -2,7 +2,7 @@ package com.lich.kotlinandroidtestdemo.utils
 
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
-import com.lich.kotlinandroidtestdemo.IPFSEntity
+import com.lich.kotlinandroidtestdemo.entity.IPFSEntity
 import okhttp3.MultipartBody
 import okhttp3.OkHttpClient
 import okhttp3.Request

@@ -1,18 +1,16 @@
-package com.lich.kotlinandroidtestdemo
+package com.lich.kotlinandroidtestdemo.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
+import com.lich.kotlinandroidtestdemo.adapter.IPFSAdapter
+import com.lich.kotlinandroidtestdemo.entity.IPFSEntity
+import com.lich.kotlinandroidtestdemo.R
 import com.lich.kotlinandroidtestdemo.utils.AppConfig
 import com.lich.kotlinandroidtestdemo.utils.HttpUtils
 import kotlinx.android.synthetic.main.activity_ipfs.*
-import okhttp3.MultipartBody
-import okhttp3.OkHttpClient
-import okhttp3.Request
-import org.json.JSONObject
-import java.lang.Exception
 
 /**
  * Created by lichhowger on 2020/11/9.

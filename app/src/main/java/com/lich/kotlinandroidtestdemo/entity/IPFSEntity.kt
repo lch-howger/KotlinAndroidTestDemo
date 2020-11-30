@@ -1,6 +1,4 @@
-package com.lich.kotlinandroidtestdemo
-
-import android.util.Size
+package com.lich.kotlinandroidtestdemo.entity
 
 /**
  * Created by lichhowger on 2020/11/9.

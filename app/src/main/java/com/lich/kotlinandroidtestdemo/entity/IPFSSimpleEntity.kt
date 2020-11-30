@@ -1,4 +1,4 @@
-package com.lich.kotlinandroidtestdemo
+package com.lich.kotlinandroidtestdemo.entity
 
 import android.util.Size
 

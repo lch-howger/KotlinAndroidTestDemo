@@ -1,4 +1,4 @@
-package com.lich.kotlinandroidtestdemo;
+package com.lich.kotlinandroidtestdemo.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

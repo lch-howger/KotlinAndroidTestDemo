@@ -1,7 +1,8 @@
-package com.lich.kotlinandroidtestdemo
+package com.lich.kotlinandroidtestdemo.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.lich.kotlinandroidtestdemo.R
 import com.lich.kotlinandroidtestdemo.utils.PathUtils
 import kotlinx.android.synthetic.main.activity_detail.*
 import okhttp3.MultipartBody
