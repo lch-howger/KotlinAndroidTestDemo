@@ -4,25 +4,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <ImageView
-        android:id="@+id/iv_img"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:src="@mipmap/ic_launcher_round" />
+    android:orientation="vertical"
+    android:paddingTop="100dp">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="saveFile"
+        android:text="选择地址保存文件" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:onClick="test01"
-        android:text="test01" />
+        android:text="保存文件" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="test02"
-        android:text="进入全屏act" />
+        android:onClick="openFile"
+        android:text="打开文件管理器" />
 
     <Button
         android:layout_width="wrap_content"
@@ -41,6 +43,5 @@
         android:layout_height="wrap_content"
         android:onClick="enterIPFS"
         android:text="进入IPFS" />
-
 
 </LinearLayout>

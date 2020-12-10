@@ -26,7 +26,7 @@
         <activity android:name=".activity.TestActivity" />
         <activity
             android:name=".activity.TestActivity2"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/style_activity_no_action_bar" />
         <activity android:name=".activity.TestActivity3" />
         <activity android:name=".activity.TestActivity4" />
         <activity android:name=".activity.IPFSTestActivity" />
